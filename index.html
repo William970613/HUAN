@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>自我介紹 - IG風格</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+  .profile-img {
+    transition: transform 0.8s ease-in-out;
+  }
+
+  .profile-img:hover {
+    transform: rotate(360deg);
+  }
+</style>
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>HYC</h2>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-menu" id="navMenu">
+      <a href="#">首頁</a>
+      <a href="MBTI.html">MBTI測驗</a>
+      <a href="portfolio2.html">照片牆</a>
+      <a href="contact.html">聯絡我</a>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="profile">
+      <img src="photo1.jpg" class="profile-img" alt="頭像">
+      <div class="profile-info">
+        <h1>@c_c7799</h1>
+        <p>小程</p>
+        <div class="buttons">
+          <button onclick="location.href='TU.html'">我的妥瑞朋友</button>
+          <button onclick="location.href='video.html'">查看我撞牆的影片</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-row">
+      <div class="section">
+        <h2>📌 自我介紹</h2>
+        <div class="section-content">
+          <p id="intro-text"></p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>🌟 興趣 & 技能</h2>
+        <div class="section-content">
+          <p>💻 程式設計<br>
+             🎮 打遊戲、拍同學的醜照<br>
+             📷 喜歡拍照分享生活點滴</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>🎲 小遊戲：猜猜我在想什麼數字</h2>
+        <div class="section-content">
+          <p>我心裡有個數字（1~15），你猜猜是幾？</p>
+          <input type="number" id="guessInput" placeholder="輸入數字 1~15">
+          <button onclick="checkGuess()">猜看看！</button>
+          <p id="gameResult" style="margin-top: 10px;"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ✨ 分開的 JS -->
+  <script src="work.js"></script>
+  <script src="game.js"></script>
+
+</body>
+</html>
+

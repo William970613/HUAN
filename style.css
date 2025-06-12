@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f5e9d3;
+  color: #5a4b3f;
+  padding-top: 60px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff7ed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 999;
+  border-bottom: 1px solid #e0cfc1;
+}
+
+.navbar h2 {
+  font-size: 24px;
+  color: #5a4b3f;
+}
+
+.hamburger {
+  font-size: 26px;
+  cursor: pointer;
+  user-select: none;
+  color: #5a4b3f;
+}
+
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff7ed;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  border: 1px solid #e0cfc1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.nav-menu a {
+  color: #5a4b3f;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-bottom: 1px solid #e0cfc1;
+}
+
+.nav-menu a:hover {
+  background-color: #f2e4d8;
+}
+
+.nav-menu.show {
+  display: flex;
+}
+
+.main {
+  padding: 40px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid #5a4b3f;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  font-size: 24px;
+  color: #5a4b3f;
+}
+
+.profile-info p {
+  color: #7d6a5e;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  background: #f3ec87;
+  border: none;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #0ea9bd;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #5a4b3f;
+}
+
+.section-content {
+  background-color: #fff7ed;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e0cfc1;
+}
+
+input[type="number"] {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 10px;
+  font-size: 16px;
+  width: 80px;
+}
+
+.section-content button {
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+}
+
+.section-content button:hover {
+  background: #ffaa00;
+}
